@@ -19,7 +19,6 @@ spec:
         - containerPort: 3550
         env:
         - name: MONGODB_URI
-          # TODO change <MONGO_PRIMARY_DNS> bellow
           value: mongodb://mongo-0.mongo-service:27017/?replicaSet=myReplicaSet
         - name: MONGODB_PRODUCTS_DB_NAME
           value: test
